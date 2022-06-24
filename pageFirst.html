@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>prince hasan</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+</head>
+<body class="w3-black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<style>
+  *{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing:border-box;
+}
+  nav{
+    background-color: grey;
+    height: 80px;
+    width: 100%;
+
+}
+label.name{
+    color: white;
+    font-size: 20px;
+    line-height: 80px;
+    padding: 0 100px;
+    letter-spacing:0.2em;
+    font-family:EB Garamond;
+}
+nav ul{
+   float: right;
+   margin-right: 20px;
+   text-align: center;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    color: aliceblue;
+    border-radius: 13px;
+}
+nav ul li a:hover{
+    color: black;
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media (max-width: 858px) {
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position:fixed;
+        width: 100%;
+        height: 50vh;
+        background: #fff;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    nav ul li a:hover{
+        color: black
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+
+</style>
+
+<nav class=" w3-hide-small">
+  <input type="checkbox" id="check">
+  <label for="check" class="checkbtn">
+    <i class="fas fa-bars"></i>
+  </label>
+  <label class="name">PRINCE HASSAN</label>
+  <ul>
+      <li><a href="index.html" class="active">HOME</a></li>
+      <li><a href="#" class="active">ABOUT</a></li>
+      <li><a href="shop.html" class="active">SHOP</a></li>
+      <li><a href="phots.html" class="active">Gallery</a></li>
+  </ul>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="index.html" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">SHOP</a>
+    <a href="phots.html" class="w3-bar-item w3-button" style="width:25% !important">Gallery</a>
+  </div>
+</div>
+<!-- Page Content -->
+  <!-- Portfolio Section -->
+    <!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+  
+
+<style>
+  .container{
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left{
+    width: 50%;
+    height: 600px;
+    background: url(pic/sobi.jpg) no-repeat center / cover;
+    border-radius: 8px;
+    clip-path: circle();
+}
+.right{
+    width: 50%;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    border-radius: 8px;
+    color: aliceblue;
+    margin-left: 20px;
+   
+}
+.right h1{
+     font-size: 40px;
+     font-weight: lighter;
+}
+.right p{
+    margin: 20px 0;
+    font-weight: 500;
+    line-height: 25px;
+}
+.right a{
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: aquamarine;
+    color: black;
+    padding: 20px 60px;
+    display: inline-block;
+    letter-spacing: 2px;
+    border-radius: 10px;
+}
+@media only screen and (max-width: 768px) {
+    .container{
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+    }
+    .left{
+        width: 100%;
+        height: 400px;
+    }
+    .right{
+       width: 80%;
+       margin: 0%;
+       height: 300px;
+    }
+}
+.h1{
+  font-size: 55px;
+}
+</style>
+
+    <section>
+      <div class="container">
+        <div class="left"></div>
+        <div class="right">
+          <div class="content">
+            <h1 class="w3-jumbo"><span class="w3-hide-small">Hey!</span><br> <span class="h1">It's Prince Hassan.</span></h1>
+            <p>A solo travel and freelancer filmmaker based in Bangladesh.</p>        
+          </div>
+        </div>
+      </div>
+     </section>
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey"> About</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>From a very early age a kid who used to take pictures and edit it with a phone! Still with that same excitement he creates visuals in his own distinct way using a camera and a drone! Throughout his videos he tries to portray the scenic beauty of his country like never seen. <br>Along with making travel films Prince is available for any kind of projects and business internships. For more information find him on instagram @princehas.san or send E-mail on hassanprince5786@gmail.com 
+    </p>
+
+    <!-----------------buy option----------->
+    <!-----------<div>
+      <img src="pic/headPic.jpg" alt="" width="100%">
+    </div>
+    <br><br><br>
+    <div class="w3-row-padding" style="margin:0 -16px ">
+      <style>
+        .font{
+          font-size: 15px;
+        }
+      </style>
+      <div class="w3-half">
+        <style>
+          .pic{
+          position: relative;
+          left: 70px;
+          }
+        </style>
+        <img src="pic/lut-pack.jpg" style="width:70%" class="pic">
+      </div>
+
+      <div class="w3-half">
+        <form action="/action_page.php" target="_blank">
+       <h3 style="font-family:'Lucida Sans', 'Lucida Sans Regular'
+       , 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana,
+        sans-serif;"> CINEMATIC LUT-PACK</h3>
+
+      <h2 class="font">  <del>BDT 200.00</del> BDT 99.00</h2>
+     
+          <button style="
+        width: 50%;    
+        padding: 5px 15px;
+        border: none;
+        outline: none;
+        background: rgb(0, 119, 255);
+        color: #FFF;
+        font-size: 20px;
+        font-weight: bold;
+        border-radius: 10px;
+        cursor: pointer; "><a href="pageSecond.html" style="text-decoration: none;"> buy now <i class='fa fa-shopping-cart'></i> </a></button>
+        </form>
+     
+      <ul class="font">
+        <h5 class= "font" >CINEMATIC VIDEO FILTERS - BY PRINCE HASAN</h5>
+        <p>What's included?</p>
+        -05 Professional Cinematic Video Filters (.cube)
+        <li>EH1 - #VULCAN</li>
+        <li>EH2 - #RED WINE</li>
+        <li>EH3 - #OFFICIA</li>
+        <li>EH4 - #LUSH GREENS</li>
+        <li>EH5 - #MOODY</li>
+        - 10 min video tutorial on how to use the LUTs in the best way possible. 
+      </ul>
+      </div>
+    </div>----------->
+
+
+    <!-------------------show a video---->
+    <br><br><br>
+    <!-------------------------------------------
+    <h1 style="text-align:center ;">LUTS – TRAILER</h1>
+
+     <div class="video-player">
+       <video controls width="100%">
+         <source src="pic/The 70 Best Free LUTs Hand-picked By A Colorist For Your Films(1080P_HD).mp4" type="video/mp4">
+       </video>
+     </div>
+
+    <!-- Grid for photos -->
+    <!---------------------------------------------
+    <br><br><br>
+    <h2 class="w3-text-light-grey">PHOTS</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="pic/pic1.JPG" style="width:100%">
+        <img src="pic/pic2.JPG" style="width:100%">
+        <img src="pic/pic3.JPG" style="width:100%">
+        <img src="pic/pic6.JPG" style="width:100%">
+      </div>
+
+      <div class="w3-half">
+        <img src="pic/pic4.JPG" style="width:100%">
+        <img src="pic/pic5.JPG" style="width:100%">
+        <img src="pic/pic4.JPG" style="width:100%">
+        <img src="pic/pic2.JPG" style="width:100%">
+      </div>---------->
+    <!-- End photo grid -->
+    </div>
+  <!-- End Portfolio Section -->
+  </div>
+  <!-- End Contact Section -->
+  </div>
+  
+    <!-- Footer -->
+  <footer class="w3-center w3-content w3-padding-64 w3-text-grey w3-xlarge">
+    <a href="https://www.facebook.com/princehassan09"> <i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a href="https://www.instagram.com/princehas.san"> <i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <a href="https://www.youtube.com/c/PrinceHassan"> <i class="fa fa-youtube w3-hover-opacity"></i></a>
+    <p class="w3-medium">Powered by <a href="" target="_blank" class="w3-hover-text-green"> SharkSplit.inc</a></p>
+  <!-- End footer -->
+  </footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+</body>
+</html>
